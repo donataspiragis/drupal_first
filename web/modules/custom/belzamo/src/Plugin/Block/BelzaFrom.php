@@ -24,7 +24,6 @@ class BelzaFrom extends BlockBase {
   }
   public function blockAccess(AccountInterface $account)
   {
-
     if(\Drupal::currentUser()->isAuthenticated()){
       return AccessResult::allowedIfHasPermission($account, 'view belza_form');
     }

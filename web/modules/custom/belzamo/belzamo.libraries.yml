@@ -5,3 +5,11 @@ firstjs:
 hooker:
   js:
     js/belzamohook.example_block.js: {}
+
+exblock:
+  css:
+    layout:
+      css/belzamo.example_block.css: {}
+    theme:
+      css/belzamo.example_block.css: {}
+

@@ -22,22 +22,36 @@ class SideBarer extends BlockBase {
    */
   public function build() {
     $config = $this->getConfiguration();
+    $default_config = \Drupal::config('belzamo.settings');
 
     if (!empty($config['link'])) {
       $link = $config['link'];
+    } else {
+      $link = $default_config->get('disc.link');
+    }
+
+    if (!empty($config['text'])) {
       $text = strip_tags($config['text']);
-      $html = $config['html'];
-    }
-    else {
-      $link = $this->t('to no one');
-      $text = $config['text'];
-      $html = $config['html'];
-    }
+    } else {
+        $text = $default_config->get('disc.text');
+     }
+
+     if(!empty($config['html'])){
+       $html = $config['html'];
+     } else {
+       $html = $default_config->get('disc.html');
+     }
+
     return array(
       '#theme' => 'belzamo_theme',
       '#link' => $link,
       '#text' => $text,
       '#html' => $html,
+      '#attached' => [
+        'library' => [
+          'belzamo/firstjs',
+        ],
+      ],
       );
   }
 
