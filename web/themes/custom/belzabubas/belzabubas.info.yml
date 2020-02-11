@@ -7,6 +7,7 @@ base theme: false
 screenshot: screenshot.png
 regions:
   header: 'Header'
+  primary_menu: 'Navigation'
   content: 'Content'
   sidebar: 'Sidebar'
   footer: 'Footer'

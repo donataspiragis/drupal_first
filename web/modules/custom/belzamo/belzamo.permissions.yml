@@ -1,0 +1,10 @@
+view belzamo_form:
+  title: 'View belzamo_form'
+  description: 'Able to view only logged in'
+access belzamo_form report:
+  title: 'Access List to belzamo form'
+  description: 'View the form list'
+administer belzamo_form:
+  title: 'Administer belzamo form settings'
+  description: 'Access belzamo form administrator'
+  restrict access: true

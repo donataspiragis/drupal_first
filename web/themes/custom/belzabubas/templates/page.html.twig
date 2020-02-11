@@ -49,38 +49,31 @@
     {{ page.header }}
   </header>
 
+
+<div class="custom-navigation">
   {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+</div>
 
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
+      Hello
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
+    {% if page.sidebar %}
+      {{ attach_library('belzabubas/sidebar') }}
+      <aside class="layout-sidebar sidebar-css" role="complementary">
+        {{ page.sidebar }}
       </aside>
     {% endif %}
 
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="footer">
       {{ page.footer }}
     </footer>
   {% endif %}

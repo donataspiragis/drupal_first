@@ -1,0 +1,7 @@
+belzamo.form:
+  path: '/belzamoform'
+  defaults:
+    _form: '\Drupal\belzamo\Form\BelzamoForm'
+    _title: 'Belzamo Form'
+  requirements:
+    _permission: 'view belzamo_form'

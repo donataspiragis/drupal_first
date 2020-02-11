@@ -1,0 +1,6 @@
+belzamo.formpage:
+  title: 'Belzamo Form'
+  description: 'Link to Belzamo form'
+  route_name: belzamo.form
+  weight: 11
+  menu_name: main
