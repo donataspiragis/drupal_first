@@ -1,0 +1,7 @@
+firstjs:
+  js:
+    js/belzamo.example_block.js: {}
+
+hooker:
+  js:
+    js/belzamohook.example_block.js: {}

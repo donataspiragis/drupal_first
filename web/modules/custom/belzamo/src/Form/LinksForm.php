@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\belzamo\Form\BelzamoForm
+ * Contains \Drupal\belzamo\Form\LinksForm
  */
 
 namespace Drupal\belzamo\Form;
@@ -10,10 +10,10 @@ use Drupal\Core\Database\Database;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-class BelzamoForm extends FormBase {
+class LinksForm extends FormBase {
   public function getFormId()
   {
-    return 'belzamo_form';
+    return 'links_form';
   }
 
   /**
@@ -21,8 +21,7 @@ class BelzamoForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state)
   {
-    $node = \Drupal::routeMatch()->getParameter('node');
-    $nid = $node->nid->value;
+
     $form['text'] = [
       '#title' => t('Text'),
       '#type' => 'textarea',
@@ -39,11 +38,8 @@ class BelzamoForm extends FormBase {
       '#type' => 'submit',
       '#value' => t('Submit'),
     ];
-    $form['nid'] = [
-      '#type' => 'hidden',
-      '#value' => $nid,
-    ];
     return $form;
+
   }
 
   /**
@@ -51,6 +47,6 @@ class BelzamoForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state)
   {
-    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    return 'hell';
   }
 }

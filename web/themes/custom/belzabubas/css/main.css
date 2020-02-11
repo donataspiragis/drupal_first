@@ -38,12 +38,11 @@ body {
 .layout-sidebar {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 200px;
+  width: 300px;
   background-color: aquamarine;
   position: absolute;
   top: 40%;
-  right: 50px;
+  right: 150px;
 }
 
 /*ARTICLES*/
@@ -89,4 +88,7 @@ body {
   min-height: 120px;
   max-height: 130px;
   overflow: hidden;
+}
+form * {
+  max-width: 100%;
 }

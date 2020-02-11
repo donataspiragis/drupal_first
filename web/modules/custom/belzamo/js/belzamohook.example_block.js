@@ -2,6 +2,6 @@
  * @file
  */
 (() => {
-console.log('from block array');
+console.log('from hook');
 
 })();

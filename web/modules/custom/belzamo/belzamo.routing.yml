@@ -1,7 +1,14 @@
+belzamo.content:
+  path: '/belzamomodule'
+  defaults:
+    _controller: '\Drupal\belzamo\Controller\BelzamoController::content'
+    _title: 'My first moduel'
+  requirements:
+    _permission: 'access content'
 belzamo.form:
   path: '/belzamoform'
   defaults:
-    _form: '\Drupal\belzamo\Form\BelzamoForm'
-    _title: 'Belzamo Form'
+    _form: '\Drupal\belzamo\Form\LinksForm'
+    _title: 'Belza Form'
   requirements:
     _permission: 'view belzamo_form'
