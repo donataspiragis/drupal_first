@@ -1,0 +1,14 @@
+uuid: e1009a3c-8f5a-48a0-a411-aec9f4639945
+name: 'First Drupal Project'
+mail: donatas.piragis@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
