@@ -1,0 +1,11 @@
+<?php
+/**
+* Implements hook_theme().
+*/
+function belzamo_theme() {
+$theme['belzamo_theme'] = [
+'variables' => ['link' => NULL, 'text' => NULL, 'html' => NULL],
+'template' => 'belzamtwig',
+];
+return $theme;
+}

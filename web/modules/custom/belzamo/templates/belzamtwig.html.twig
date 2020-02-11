@@ -1,0 +1,11 @@
+<section>
+  {% trans %}
+    <a href="{{ link }}">Press me I am link</a>
+    <br>
+    <em>{{ text|striptags }}</em>
+    <br>
+    <em>
+      {{ html | raw }}
+    </em>
+  {% endtrans %}
+</section>

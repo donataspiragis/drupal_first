@@ -1,3 +1,4 @@
-hello:
-  name: 'Donatas Pie'
-  surname: 'Baba '
+disc:
+  link: 'Donatas Pie'
+  text: 'Baba '
+  html: 'HMTL'
