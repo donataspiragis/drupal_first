@@ -1,0 +1,19 @@
+belzabubas:
+  version: 1.x
+  css:
+    layout:
+      css/main.css: {}
+    theme:
+      css/main.css: {}
+  js:
+    js/main.js: {}
+
+sidebar:
+  version: 1.x
+  css:
+    layout:
+      css/sidebar.css: {}
+    theme:
+      css/sidebar.css: {}
+  js:
+    js/sidebar.js: {}
