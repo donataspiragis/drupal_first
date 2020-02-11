@@ -1,1 +1,8 @@
-console.log('Welcome to belzabubas');
+/**
+ * @file
+ */
+(() => {
+  console.log('Welcome to belzabubas');
+
+})();
+
